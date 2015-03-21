@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text=" Blackberry "
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="74dp"
+        android:text=" Android "
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox1"
+        android:layout_alignRight="@+id/checkBox2"
+        android:layout_marginBottom="21dp"
+        android:text=" iPhone "
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="86dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
